@@ -9,11 +9,11 @@ A practical, consult-as-you-go guide for open source maintainers handling GitHub
 
 ## Read the guide
 
-The full guide currently lives as Markdown in **[`the_guide/`](the_guide/)**, which renders directly on GitHub:
+The guide is published as a [Docusaurus](https://docusaurus.io/) site at **<https://ulisesgascon.github.io/maintainers-security-advisory-guide/>**.
 
-- [Guide](the_guide/GUIDE.md) · [Cheatsheet](the_guide/CHEATSHEET.md) · [FAQ](the_guide/FAQ.md) · [Limitations](the_guide/LIMITATIONS.md) · [Resources](the_guide/RESOURCES.md)
+The Markdown source lives in **[`docs/`](docs/)**, which also renders directly on GitHub:
 
-It is being migrated, gradually, into a [Docusaurus](https://docusaurus.io/) site at this repository root.
+- [Start here](docs/intro.md) · [Cheatsheet](docs/cheatsheet.md) · [FAQ](docs/faq.md) · [Limitations](docs/limitations.md) · [Resources](docs/resources.md)
 
 ## The website
 
