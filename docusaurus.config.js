@@ -2,7 +2,7 @@
 // Docusaurus configuration (prototype). Docs: https://docusaurus.io/docs/api/docusaurus-config
 const { themes: prismThemes } = require('prism-react-renderer')
 
-const githubUrl = 'https://github.com/UlisesGascon/maintainers-security-advisory-guide'
+const githubUrl = 'https://github.com/alpha-omega-security/maintainers-security-advisory-guide'
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -10,9 +10,9 @@ const config = {
   tagline: "So you got your first GHSA. Don't panic.",
 
   // Deployment (GitHub Pages project site). Update these if the repo moves (e.g. to the OSSF org).
-  url: 'https://ulisesgascon.github.io',
+  url: 'https://alpha-omega-security.github.io',
   baseUrl: '/maintainers-security-advisory-guide/',
-  organizationName: 'UlisesGascon',
+  organizationName: 'alpha-omega-security',
   projectName: 'maintainers-security-advisory-guide',
 
   onBrokenLinks: 'warn',

@@ -9,7 +9,7 @@ A practical, consult-as-you-go guide for open source maintainers handling GitHub
 
 ## Read the guide
 
-The guide is published as a [Docusaurus](https://docusaurus.io/) site at **<https://ulisesgascon.github.io/maintainers-security-advisory-guide/>**.
+The guide is published as a [Docusaurus](https://docusaurus.io/) site at **<https://alpha-omega-security.github.io/maintainers-security-advisory-guide/>**.
 
 The Markdown source lives in **[`docs/`](docs/)**, which also renders directly on GitHub:
 
