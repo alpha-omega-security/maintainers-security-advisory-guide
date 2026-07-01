@@ -1,33 +1,41 @@
 ---
-sidebar_position: 1
-title: Prototype
+title: The Maintainer's Guide to GitHub Security Advisories
 slug: /
+sidebar_label: Start here
 ---
 
-# Docusaurus scaffold (prototype)
+# The Maintainer's Guide to GitHub Security Advisories
 
-This is the Docusaurus site scaffold for **The Maintainer's Guide to GitHub Security Advisories**.
+> So you got your first GHSA. Don't panic.
 
-No content has been migrated yet. The guide's source of truth is still the Markdown in `the_guide/`:
+:::note
+Last verified against GitHub's behavior: July 2026. This guide tracks a moving platform. If something here no longer matches what you see, please open an issue.
+:::
 
-- `the_guide/GUIDE.md`
-- `the_guide/CHEATSHEET.md`
-- `the_guide/FAQ.md`
-- `the_guide/LIMITATIONS.md`
-- `the_guide/RESOURCES.md`
+:::info
+Draft under review before the first release. Corrections and feedback are welcome.
+:::
 
-## Run it locally
+## Which document do I need?
 
-```bash
-npm install
-npm start
-```
+| If you are… | Read |
+|---|---|
+| A report just landed and you want the first step | **[Cheatsheet](/cheatsheet)** |
+| Working through an advisory and want the full process | **[The Guide](/guide/getting-oriented)** |
+| Looking for the answer to one specific question | **[FAQ](/faq)** |
+| Hitting a platform limitation and want the workaround | **[Limitations](/limitations)** |
+| Looking for external guides, posts and references | **[Resources](/resources)** |
 
-## Migration checklist (later)
+## How to use this guide
 
-- Copy the Markdown from `the_guide/` into `docs/` (one file per page).
-- Convert GitHub alerts (`> [!NOTE]`, `[!WARNING]`, etc.) to Docusaurus admonitions (`:::note`).
-- Move `the_guide/images/` into `static/img/` and update image paths.
-- Rewrite cross-doc links (`GUIDE.md#anchor`) to Docusaurus routes.
-- Wire the pages into `sidebars.js`.
-- Confirm the `mermaid` lifecycle diagram renders (theme is already enabled).
+- Do not read it zero-to-hero. Jump to the stage you are at.
+- Expect to come back over several days. Most advisories take that long to close.
+- Each section stands on its own, with a "You are here if" signpost and a short checklist at the top.
+
+## A word on your authority
+
+You are not a service desk. You decide what is in scope, when things happen, and whether a report is even yours to act on.
+
+- Stay in control of the situation as much as you can, and set the pace yourself.
+- If the vulnerability is real, keep it out of public view until a fix exists. The world should not learn of it before users can protect themselves. That is the core principle of coordinated disclosure (the reasoning is in [§1](/guide/getting-oriented); the references are in [Resources](/resources#disclosure-principles-and-philosophy)).
+- You do not owe anyone anything, even while handling a security report. See [Open Source Maintainers Owe You Nothing](https://mikemcquaid.com/open-source-maintainers-owe-you-nothing/).
