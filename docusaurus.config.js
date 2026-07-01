@@ -1,0 +1,63 @@
+// @ts-check
+// Docusaurus configuration (prototype). Docs: https://docusaurus.io/docs/api/docusaurus-config
+const { themes: prismThemes } = require('prism-react-renderer')
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  title: "The Maintainer's Guide to GitHub Security Advisories",
+  tagline: "So you got your first GHSA. Don't panic.",
+
+  // Deployment (GitHub Pages project site). Update these if the repo moves (e.g. to the OSSF org).
+  url: 'https://ulisesgascon.github.io',
+  baseUrl: '/maintainers-security-advisory-guide/',
+  organizationName: 'UlisesGascon',
+  projectName: 'maintainers-security-advisory-guide',
+
+  // Keep the prototype building even with placeholder links.
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
+
+  i18n: { defaultLocale: 'en', locales: ['en'] },
+
+  // Enables mermaid code blocks (used by the lifecycle diagram).
+  markdown: { mermaid: true },
+  themes: ['@docusaurus/theme-mermaid'],
+
+  presets: [
+    [
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        docs: {
+          routeBasePath: '/', // serve docs at the site root
+          sidebarPath: require.resolve('./sidebars.js'),
+          editUrl: 'https://github.com/UlisesGascon/maintainers-security-advisory-guide/edit/main/docs/'
+        },
+        blog: false,
+        theme: { customCss: require.resolve('./src/css/custom.css') }
+      })
+    ]
+  ],
+
+  themeConfig: {
+    navbar: {
+      title: "Maintainer's Guide to GHSAs",
+      items: [
+        { type: 'docSidebar', sidebarId: 'guideSidebar', position: 'left', label: 'Guide' },
+        {
+          href: 'https://github.com/UlisesGascon/maintainers-security-advisory-guide',
+          label: 'GitHub',
+          position: 'right'
+        }
+      ]
+    },
+    footer: {
+      style: 'dark',
+      links: [],
+      copyright: 'Licensed CC BY 4.0. Built with Docusaurus.'
+    },
+    prism: { theme: prismThemes.github, darkTheme: prismThemes.dracula }
+  }
+}
+
+module.exports = config

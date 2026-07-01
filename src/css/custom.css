@@ -1,0 +1,10 @@
+/* Custom styles. Override Infima variables here.
+   https://docusaurus.io/docs/styling-layout */
+:root {
+  --ifm-color-primary: #2563eb;
+  --ifm-code-font-size: 95%;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #60a5fa;
+}
