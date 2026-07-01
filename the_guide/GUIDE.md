@@ -646,4 +646,4 @@ You do not have to figure this out alone. Where to turn:
 - **The CVE program.** For identifier questions, the [CVE program](https://www.cve.org/) publishes a FAQ and the CNA Rules.
 - **OpenSSF.** The [Open Source Security Foundation](RESOURCES.md#security-communities) runs working groups, guides, and tooling for exactly this kind of work, and it is a good place to find people who have handled it before.
 - **Other maintainers.** Peers solving the same problem you are have likely hit your issue before (see [§9](#9-building-for-the-long-term) on building that network). You are already the effective leader of your project; usually you just need a second opinion to make a confident call.
-- **This guide.** Its authors and contributors are happy to help, open an issue or see [CONTRIBUTING](CONTRIBUTING.md).
+- **This guide.** Its authors and contributors are happy to help, open an issue or see [CONTRIBUTING](../CONTRIBUTING.md).

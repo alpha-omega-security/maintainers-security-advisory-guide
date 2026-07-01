@@ -30,8 +30,8 @@ This is not a read-it-once tutorial. Most advisories take days to close, so the 
 
 The community has lacked a structured, guided version of this process for maintainers for a long time. This guide begins as an opinionated one, written by [Ulises Gascón](https://github.com/UlisesGascon) based on his personal experience, and opens to community consensus over time.
 
-It ships dated releases (for example `2026-07`), consolidated roughly monthly when there is something worth cutting. See [CONTRIBUTING.md](CONTRIBUTING.md).
+It ships dated releases (for example `2026-07`), consolidated roughly monthly when there is something worth cutting. See [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 ## License
 
-[CC BY 4.0](LICENSE). Code snippets are free to use without attribution.
+[CC BY 4.0](../LICENSE). Code snippets are free to use without attribution.
