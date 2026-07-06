@@ -15,10 +15,10 @@ Handling one advisory is a task. Handling them sustainably is a system. This is 
 
 ## Write it down before you need it
 
-This is the how-to that [§4](/guide/triaging-the-report) pointed here for.
+This is the how-to that [§4](./triaging-the-report.md) pointed here for.
 
-- **A SECURITY.md.** Turn on private vulnerability reporting and state how to report, what is in scope, and which versions you support. It routes reports to the right place and sets expectations before anyone files. ([Make it easy and safe to report](/resources#guides-and-process-frameworks).)
-- **A threat model.** Write down what your project does and does not defend against. That documented scope is what makes triage fast and rejections defensible ([§4](/guide/triaging-the-report)).
+- **A SECURITY.md.** Turn on private vulnerability reporting and state how to report, what is in scope, and which versions you support. It routes reports to the right place and sets expectations before anyone files. ([Make it easy and safe to report](../resources.md#guides-and-process-frameworks).)
+- **A threat model.** Write down what your project does and does not defend against. That documented scope is what makes triage fast and rejections defensible ([§4](./triaging-the-report.md)).
 
 A few public threat models worth studying, each interesting for a different reason:
 
@@ -31,7 +31,7 @@ A few public threat models worth studying, each interesting for a different reas
 
 - **Who.** Up, the maintainers of your dependencies; down, the projects and companies that depend on you; and sideways, your peers, the projects solving the same problem you are.
 - **Early warning and impact.** Trusted contacts give you advance notice of incoming issues, and downstream teams, who see how your code is actually used, help you calibrate severity and blast radius far better than guessing alone.
-- **Smaller fixes.** Sometimes the cleanest fix lives upstream. A good relationship there means you can ask for the change you need instead of reinventing it in your own code, which often keeps your patch smaller and more semver-compatible ([§7](/guide/coordinating-publication)).
+- **Smaller fixes.** Sometimes the cleanest fix lives upstream. A good relationship there means you can ask for the change you need instead of reinventing it in your own code, which often keeps your patch smaller and more semver-compatible ([§7](./coordinating-publication.md)).
 - **Your peers share your problems.** Projects in the same category face near-identical security challenges: the vulnerability classes in HTTP libraries, test frameworks, parsers, and the like look alike no matter the language underneath. Team up with peers even in other ecosystems; chances are one of them has already handled your next report.
 - **Your triage bench.** Upstream, downstream, and peer maintainers and contributors often make the best additions to a security triage team.
 - Coordinated disclosure is a standing network, not a one-off. The people you treat well are the ones who loop you in next time.
@@ -40,12 +40,12 @@ A few public threat models worth studying, each interesting for a different reas
 
 When reports arrive regularly, one heroic maintainer is a single point of failure. Spread it out:
 
-- A triage rota, a security working group, or a VMT (vulnerability management team), whatever fits your size. ([Treat security as a team effort](/resources#guides-and-process-frameworks).)
-- Decide in advance who can do the things that need permission, like merging a private fork past branch protections ([§7](/guide/coordinating-publication)).
+- A triage rota, a security working group, or a VMT (vulnerability management team), whatever fits your size. ([Treat security as a team effort](../resources.md#guides-and-process-frameworks).)
+- Decide in advance who can do the things that need permission, like merging a private fork past branch protections ([§7](./coordinating-publication.md)).
 
 ## Have an incident-response process
 
-A simple written process beats improvising under pressure: who triages, how you communicate, who publishes. It does not need to be heavy. ([A lightweight incident response process](/resources#guides-and-process-frameworks).)
+A simple written process beats improvising under pressure: who triages, how you communicate, who publishes. It does not need to be heavy. ([A lightweight incident response process](../resources.md#guides-and-process-frameworks).)
 
 Not every incident is the calm, controlled process this guide describes, where you set the pace and have time to think. Sometimes you are reacting to a supply-chain attack, a compromised account, or a maintainer who lost access: situations where the clock is not yours and the stakes are higher. The same team and the same relationships that handle routine triage are what carry you through these; a solid plan and a solid network are worth far more when you cannot afford to improvise.
 
