@@ -9,8 +9,9 @@
     "build": "docusaurus build",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
-    "lint": "standard",
-    "lint:fix": "standard --fix"
+    "lint": "standard && npm run lint:links",
+    "lint:fix": "standard --fix",
+    "lint:links": "node scripts/check-relative-links.js"
   },
   "dependencies": {
     "@docusaurus/core": "^3.10.1",
