@@ -16,7 +16,7 @@ The riskiest moment in the whole process is this one. The fix becomes public the
 
 ## The order of operations
 
-Have everything staged before you start: the advisory drafted ([§6](/guide/preparing-the-advisory)), the CVE reserved, the fix ready in the fork or your private clone ([§5](/guide/preparing-the-fix)). Then go in order:
+Have everything staged before you start: the advisory drafted ([§6](./preparing-the-advisory.md)), the CVE reserved, the fix ready in the fork or your private clone ([§5](./preparing-the-fix.md)). Then go in order:
 
 1. **Merge the fix** into your release branches.
 2. **Tag and publish the release** (one per backported line).
@@ -27,7 +27,7 @@ The gap that matters is between steps 2 and 3. Once the release is out, the fix 
 
 One thing that can stall step 1 is your own repository rules. Branch protections (block force pushes, required status checks, required pull requests) can refuse the merge from a temporary private fork, and only someone who can bypass them gets it through. Sort that out before publication day, not in the middle of it.
 
-![The GitHub security advisory view near publication: a temporary private fork with an approved pull request, a warning that the advisory may be blocked by repository rules (restrict deletions, block force pushes, require a pull request, require status checks) so the changes can only be merged by someone who can bypass branch protections, and a "Publish advisory" action noting that outstanding pull requests must first be merged or closed.](/img/advisory_blocked_by_rules.png)
+![The GitHub security advisory view near publication: a temporary private fork with an approved pull request, a warning that the advisory may be blocked by repository rules (restrict deletions, block force pushes, require a pull request, require status checks) so the changes can only be merged by someone who can bypass branch protections, and a "Publish advisory" action noting that outstanding pull requests must first be merged or closed.](../../static/img/advisory_blocked_by_rules.png)
 
 You can reference the CVE and the advisory in your commit messages and release notes as you go. Neither is publicly accessible until you publish, so the links simply resolve once you do.
 
@@ -35,13 +35,13 @@ You can reference the CVE and the advisory in your commit messages and release n
 Step 3 is destructive. Publishing the advisory deletes the temporary private fork, the dialog says so plainly ("Delete fork and publish"), and it can only be undone by contacting support. Before you publish, collect anything in the fork you want to keep (pull request comments, review discussion, branches), because it all goes when the fork does.
 :::
 
-![The "Publish advisory" confirmation dialog warning that publishing this advisory will delete the temporary private fork, with "Cancel" and "Delete fork and publish" buttons and a note that the action can only be undone by contacting support.](/img/publish_deletes_fork.png)
+![The "Publish advisory" confirmation dialog warning that publishing this advisory will delete the temporary private fork, with "Cancel" and "Delete fork and publish" buttons and a note that the action can only be undone by contacting support.](../../static/img/publish_deletes_fork.png)
 
 ## When to publish
 
 Pick a moment when people are around to react. A patch that ships late on a Friday or over a holiday sits unapplied while attackers read the diff; the downstream maintainers and security teams who pull it through need to be awake.
 
-If there is an embargo, the clock is the reporter's disclosure norm, not a GitHub rule, and it is negotiable (see [§3](/guide/acknowledging-the-report)). If you agreed a date, hit it. If you genuinely need more time, ask before it passes, not after.
+If there is an embargo, the clock is the reporter's disclosure norm, not a GitHub rule, and it is negotiable (see [§3](./acknowledging-the-report.md)). If you agreed a date, hit it. If you genuinely need more time, ask before it passes, not after.
 
 ## Shape the release
 

@@ -15,12 +15,13 @@ const config = {
   organizationName: 'alpha-omega-security',
   projectName: 'maintainers-security-advisory-guide',
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenAnchors: 'throw',
 
   i18n: { defaultLocale: 'en', locales: ['en'] },
 
   // Enables mermaid code blocks (used by the lifecycle diagram).
-  markdown: { mermaid: true, hooks: { onBrokenMarkdownLinks: 'warn' } },
+  markdown: { mermaid: true, hooks: { onBrokenMarkdownLinks: 'throw' } },
   themes: ['@docusaurus/theme-mermaid'],
 
   presets: [
