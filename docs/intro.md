@@ -9,7 +9,7 @@ sidebar_label: Start here
 > So you got your first GHSA. Don't panic.
 
 :::note
-Last verified against GitHub's behavior: July 2026. This guide tracks a moving platform. If something here no longer matches what you see, please open an issue.
+Last verified against GitHub's behavior: October 2026. This guide tracks a moving platform. If something here no longer matches what you see, please open an issue.
 :::
 
 :::info

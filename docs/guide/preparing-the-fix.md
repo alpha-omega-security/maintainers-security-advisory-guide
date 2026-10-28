@@ -35,9 +35,9 @@ Where you build the fix depends on how much you rely on your tooling, and on the
 
 **The temporary private fork (the dark room).** From the draft advisory, GitHub lets you start a temporary private fork: a private space, tied to the advisory, where collaborators can work on the fix. It is the native option and keeps everything in one place.
 
-The catch is in the name. Your normal workflow does not run here: status checks and Actions do not run, and your organization secrets are unavailable. You are coding with the lights off. Workarounds (running checks locally, a manual test plan, mirroring to a private repo that does have Actions) are tracked in [LIMITATIONS.md](../limitations.md).
+The catch is in the name. Your normal workflow does not run here: status checks and Actions do not run, and your organization secrets are unavailable. You are coding with the lights off. Workarounds (running checks locally, a manual test plan, mirroring to a private repo that does have Actions) are tracked in [Limitations](../limitations.md).
 
-Access is coarse: anyone you add as a collaborator on the advisory can reach the fork, and there is no finer control than that (see [LIMITATIONS.md](../limitations.md)). Add only the people you need. The reporter can also open their own private fork and push branches or pull requests into it; that is by design.
+Access is coarse: anyone you add as a collaborator on the advisory can reach the fork, and there is no finer control than that (see [Limitations](../limitations.md)). Add only the people you need. The reporter can also open their own private fork and push branches or pull requests into it; that is by design.
 
 **A private clone or private repo.** Plenty of maintainers skip the fork entirely and build the fix in a separate private repository, where their CI and secrets work normally. You keep your tooling; in exchange you keep it private and merge the fix back cleanly when you publish.
 
