@@ -16,7 +16,7 @@ Draft under review before the first release. Corrections and feedback are welcom
 - **It is already fixed in a newer release, do I still need an advisory?** Yes, so downstream learns which version to upgrade to. Already fixed does not mean no advisory. ([§5](./guide/preparing-the-fix.md))
 - **Do I have to assign a CVE?** No. A CVE is optional; the GHSA itself drives the Advisory Database and Dependabot. Skip or defer it if you do not need cross-ecosystem recognition. ([§6](./guide/preparing-the-advisory.md))
 - **Can someone get a CVE for my project without me?** Yes, through a CNA of last resort, with no input from you. One more reason not to go silent. ([§6](./guide/preparing-the-advisory.md))
-- **Who can see the report?** While it is a draft: repo admins, the reporter, and collaborators you add. On publish: the advisory record and the reporter's first message go public; the rest of the thread never does. ([§2](./guide/reading-the-advisory.md))
+- **Who can see the report?** While it is a draft: repo admins, the reporter, and collaborators you add. On publish: the advisory record and the reporter's first message go public; the rest of the thread never does. You can also leave [confidential comments](https://github.blog/changelog/2026-10-02-confidential-comments-on-repository-security-advisories/) that only people with write access see, never the reporter. ([§2](./guide/reading-the-advisory.md))
 
 ## Intake
 
