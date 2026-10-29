@@ -35,7 +35,7 @@ Work through four questions in order. The first "no" usually settles it.
 4. **Is it yours to fix?** The flaw may live in a dependency, in upstream, or in how the user configured things. If so, it belongs to someone else, even if you end up bumping a version to pick up their fix.
 
 :::warning
-Do not download or run binaries, archives, or proof-of-concept files attached to a report. A security advisory is an untrusted input surface like any other: read the code, do not execute a stranger's payload.
+Do not download or run binaries, archives, or proof-of-concept files attached to a report. A security advisory is an untrusted input surface like any other: read the code, do not execute a stranger's payload. If you have a clear reason to run one anyway, the PHP Foundation's [guide](https://thephp.foundation/blog/2026/08/19/so-you-received-a-security-report-now-what/) recommends doing it only in a disposable, isolated environment (a throwaway VM, container, or sandbox), never on your development machine.
 :::
 
 :::tip

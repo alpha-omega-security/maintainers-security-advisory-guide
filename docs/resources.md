@@ -30,6 +30,7 @@ Draft under review before the first release. Corrections and feedback are welcom
 ## Guides and process frameworks
 
 - **OpenSSF OSS vulnerability guide (maintainer guide).** https://github.com/ossf/oss-vulnerability-guide/blob/main/maintainer-guide.md
+- **PHP Foundation, "So You Received a Security Report. Now What?"** A maintainer's guide adapted from this one for the PHP and Composer ecosystem, by Sebastian Bergmann. A useful second perspective on the same lifecycle. https://thephp.foundation/blog/2026/08/19/so-you-received-a-security-report-now-what/
 - **opensource.guide, security best practices for your project.** https://opensource.guide/security-best-practices-for-your-project/
   - Treat security as a team effort: https://opensource.guide/security-best-practices-for-your-project/#treat-security-as-a-team-effort
   - Prepare a lightweight incident response process: https://opensource.guide/security-best-practices-for-your-project/#prepare-a-lightweight-incident-response-process
