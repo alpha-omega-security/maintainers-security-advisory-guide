@@ -35,7 +35,7 @@ Work through four questions in order. The first "no" usually settles it.
 4. **Is it yours to fix?** The flaw may live in a dependency, in upstream, or in how the user configured things. If so, it belongs to someone else, even if you end up bumping a version to pick up their fix.
 
 :::warning
-Do not download or run binaries, archives, or proof-of-concept files attached to a report. A security advisory is an untrusted input surface like any other: read the code, do not execute a stranger's payload.
+Do not download or run binaries, archives, or proof-of-concept files attached to a report. A security advisory is an untrusted input surface like any other: read the code, do not execute a stranger's payload. If you have a clear reason to run one anyway, the PHP Foundation's [guide](https://thephp.foundation/blog/2026/08/19/so-you-received-a-security-report-now-what/) recommends doing it only in a disposable, isolated environment (a throwaway VM, container, or sandbox), never on your development machine.
 :::
 
 :::tip
@@ -64,7 +64,7 @@ At this stage GitHub offers four actions, and nothing else:
 - **Comment.** Reply without deciding yet, for example to ask for a clearer proof of concept.
 - **Close security advisory.** Decline it. A comment is not required, but always leave one.
 
-There is also no way to give reporters a submission template the way you can for issues or pull requests, so reports arrive in wildly varying shape and quality (see [LIMITATIONS.md](../limitations.md)).
+Since October 2026, GitHub offers a [structured form for privately reported vulnerabilities](https://github.blog/changelog/2026-10-01-structured-forms-for-private-vulnerability-reports/) that requires a summary, details, a proof of concept, and impact, so reports arrive in a more consistent baseline shape than they once did. The form does not verify the content, so you still treat every claim as a claim; and private reports are now [rate-limited](https://github.blog/changelog/2026-10-01-rate-limits-for-private-vulnerability-reports/), with a trusted-reporter allowlist, to curb bulk or automated submissions (see [LIMITATIONS.md](../limitations.md)).
 
 ## Editorial criteria
 
@@ -78,7 +78,7 @@ The one rule when you shift criteria is transparency. Do not quietly move the go
 
 If you triage as a team, the criteria has to be shared rather than living in one person's head, so two maintainers reach the same verdict on the same report. Borderline reports, the ones sitting right on the edge of what you accept, need a safe space to talk through.
 
-There is a catch: **the advisory thread includes the reporter in every interaction.** Anything you post there, they see. So when you need to align the team on a borderline call, do it somewhere separate, without the reporter, then report the decision back in the advisory.
+There is a catch: **the advisory thread includes the reporter in most interactions.** A normal comment is visible to them. When you need to align the team on a borderline call, use a [confidential comment](https://github.blog/changelog/2026-10-02-confidential-comments-on-repository-security-advisories/) (visible only to people with write access to the repository, not the reporter), or take the discussion somewhere separate and report the decision back in the advisory.
 
 :::note
 Referencing an advisory from a pull request or issue does not create the automatic link-back you get between issues and PRs. If you discuss or track an advisory elsewhere, you have to keep those connections yourself. See [Limitations](../limitations.md).

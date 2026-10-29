@@ -6,7 +6,7 @@ sidebar_label: "Resources"
 > Curated external references. These live here so the rest of the guide can link to them instead of repeating them (one source, many links).
 
 :::note
-Last verified: July 2026.
+Last verified: October 2026.
 :::
 
 :::info
@@ -26,10 +26,12 @@ Draft under review before the first release. Corrections and feedback are welcom
 - **Using CWE and CVSS scores.** https://github.blog/security/application-security/using-cwe-and-cvss-scores-to-get-more-context-on-a-security-advisory/
 - **Why you shouldn't fear requesting a CVE.** https://github.blog/security/vulnerability-research/removing-the-stigma-of-a-cve/
 - **A maintainer's guide to vulnerability disclosure (GitHub).** https://github.blog/security/vulnerability-research/a-maintainers-guide-to-vulnerability-disclosure-github-tools-to-make-it-simple/
+- **REST API for repository security advisories (including comments).** https://docs.github.com/en/rest/security-advisories/repository-advisories
 
 ## Guides and process frameworks
 
 - **OpenSSF OSS vulnerability guide (maintainer guide).** https://github.com/ossf/oss-vulnerability-guide/blob/main/maintainer-guide.md
+- **PHP Foundation, "So You Received a Security Report. Now What?"** A maintainer's guide adapted from this one for the PHP and Composer ecosystem, by Sebastian Bergmann. A useful second perspective on the same lifecycle. https://thephp.foundation/blog/2026/08/19/so-you-received-a-security-report-now-what/
 - **opensource.guide, security best practices for your project.** https://opensource.guide/security-best-practices-for-your-project/
   - Treat security as a team effort: https://opensource.guide/security-best-practices-for-your-project/#treat-security-as-a-team-effort
   - Prepare a lightweight incident response process: https://opensource.guide/security-best-practices-for-your-project/#prepare-a-lightweight-incident-response-process

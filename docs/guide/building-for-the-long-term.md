@@ -17,7 +17,7 @@ Handling one advisory is a task. Handling them sustainably is a system. This is 
 
 This is the how-to that [§4](./triaging-the-report.md) pointed here for.
 
-- **A SECURITY.md.** Turn on private vulnerability reporting and state how to report, what is in scope, and which versions you support. It routes reports to the right place and sets expectations before anyone files. ([Make it easy and safe to report](../resources.md#guides-and-process-frameworks).)
+- **A SECURITY.md.** Turn on private vulnerability reporting and state how to report, what is in scope, and which versions you support. It routes reports to the right place and sets expectations before anyone files. Enabling private reporting also gives you GitHub's [structured report form](https://github.blog/changelog/2026-10-01-structured-forms-for-private-vulnerability-reports/) (required summary, details, proof of concept, and impact) and [per-account rate limiting](https://github.blog/changelog/2026-10-01-rate-limits-for-private-vulnerability-reports/) with a trusted-reporter allowlist. ([Make it easy and safe to report](../resources.md#guides-and-process-frameworks).)
 - **A threat model.** Write down what your project does and does not defend against. That documented scope is what makes triage fast and rejections defensible ([§4](./triaging-the-report.md)).
 
 A few public threat models worth studying, each interesting for a different reason:

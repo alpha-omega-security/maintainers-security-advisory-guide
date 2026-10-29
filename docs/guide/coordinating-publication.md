@@ -25,6 +25,10 @@ Have everything staged before you start: the advisory drafted ([§6](./preparing
 
 The gap that matters is between steps 2 and 3. Once the release is out, the fix is public and an attacker can diff it, so publish the advisory right away rather than the next morning.
 
+:::note
+The PHP Foundation's [guide](https://thephp.foundation/blog/2026/08/19/so-you-received-a-security-report-now-what/) frames the same gap vividly: it should be "minutes to hours, not days," because a public fix without an advisory is a window in which attackers can diff your release while users have no warning to upgrade. For Composer packages it adds one ecosystem-specific publication step, submitting the advisory to the FriendsOfPHP security-advisories database.
+:::
+
 One thing that can stall step 1 is your own repository rules. Branch protections (block force pushes, required status checks, required pull requests) can refuse the merge from a temporary private fork, and only someone who can bypass them gets it through. Sort that out before publication day, not in the middle of it.
 
 ![The GitHub security advisory view near publication: a temporary private fork with an approved pull request, a warning that the advisory may be blocked by repository rules (restrict deletions, block force pushes, require a pull request, require status checks) so the changes can only be merged by someone who can bypass branch protections, and a "Publish advisory" action noting that outstanding pull requests must first be merged or closed.](../../static/img/advisory_blocked_by_rules.png)

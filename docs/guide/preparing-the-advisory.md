@@ -82,6 +82,10 @@ That same advisory then lives in more than one place, at more than one level of 
 - **Anyone can get one.** A third party can request a CVE for your project without you, through a CNA of last resort. This is the escalation that makes silence expensive, and why [§3](./acknowledging-the-report.md) pushes you to acknowledge early: better the CVE comes from you, with your description, than from someone guessing.
 - **Split when you need to.** If one report turns out to cover several distinct issues, or you fix several at once, give each its own advisory and CVE and cross-link them in the descriptions. One advisory per issue keeps the records clean for the tools consuming them.
 
+:::note
+For a Composer/PHP maintainer's take on this step, see the PHP Foundation's [So You Received a Security Report. Now What?](https://thephp.foundation/blog/2026/08/19/so-you-received-a-security-report-now-what/). It treats requesting a CVE straight from the GitHub advisory as the normal path, notes that assignment can take weeks so the fix and release should not wait on it, and recommends the "I have an existing CVE ID" option when a coordinating party has already reserved one, rather than requesting a second.
+:::
+
 ## Credit the effort
 
 Advisory work is often a team effort: a reporter, the people who wrote and reviewed the fix, whoever analyzed the impact. In an issue, a pull request, or a commit, that credit is implicit, the public metadata already records who did what. An advisory has none of that by default: credit is explicit and invisible unless you add it. So add it deliberately, for everyone involved.

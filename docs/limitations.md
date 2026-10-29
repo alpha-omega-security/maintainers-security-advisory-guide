@@ -6,7 +6,7 @@ sidebar_label: "Limitations"
 > The GitHub platform limitations that actually affect the process in this [Guide](./guide/getting-oriented.md), and the workarounds we use.
 
 :::note
-Last verified against GitHub's behavior: July 2026 (firsthand experience, public docs, and screenshots).
+Last verified against GitHub's behavior: October 2026 (firsthand experience, public docs, screenshots, and the GitHub changelog). Several limitations noted in July 2026 have since been resolved or reduced by GitHub; those are marked inline.
 :::
 
 :::info
@@ -48,19 +48,19 @@ These are GitHub's limitations, not ours, and the right place to push on them is
 
 - **Affects:** [Guide §7](./guide/coordinating-publication.md)
 - **The problem:** publishing the advisory deletes the temporary private fork, and the action can only be undone by contacting GitHub support. Everything in the fork (pull request comments, review discussion, branches) goes with it.
-- **Workaround:** treat publish as a point of no return for the fork. Before you click it, copy out the review discussion and pull request comments, push any branches you want to keep to a place you control, and note any decisions worth remembering.
+- **Workaround:** treat publish as a point of no return for the fork. Before you click it, copy out the review discussion and pull request comments, push any branches you want to keep to a place you control, and note any decisions worth remembering. The comments API does not help here: it serves the advisory's own comments (which survive publication), not the fork's pull request comments, and it does not return confidential comments at all.
 
-### No reporting template for privately reported vulnerabilities
+### No reporting template for privately reported vulnerabilities (resolved October 2026)
 
 - **Affects:** [Guide §4](./guide/triaging-the-report.md)
-- **The problem:** unlike issues and pull requests, you cannot define a submission template for privately reported vulnerabilities, so reports arrive in wildly varying shape and completeness.
-- **Workaround:** publish the format you expect in your `SECURITY.md` and threat model, spelling out what a good report includes (affected version, reproduction steps, impact). Then use your acknowledgment to ask the reporter for anything missing before you triage.
+- **Status:** resolved by GitHub. Private vulnerability reports can now use a [structured form](https://github.blog/changelog/2026-10-01-structured-forms-for-private-vulnerability-reports/) that requires a summary, details, a proof of concept (at least 150 characters), and impact, so reports arrive in a consistent baseline shape. GitHub also [rate-limits private reports](https://github.blog/changelog/2026-10-01-rate-limits-for-private-vulnerability-reports/), with a trusted-reporter allowlist, to curb bulk or automated submissions.
+- **Still worth doing:** publish the scope and the detail you expect in your `SECURITY.md` and threat model, and use your acknowledgment to ask for anything the form did not capture before you triage.
 
 ### Advisories do not cross-reference like issues and pull requests
 
 - **Affects:** [Guide §4](./guide/triaging-the-report.md)
 - **The problem:** mentioning an advisory in an issue or pull request, or the reverse, does not create the automatic linked reference that issues and PRs get between each other. There is no backlink inside the advisory pointing to where you discussed it.
-- **Workaround:** keep the connections yourself. Maintain a private tracking note (or a private issue) that links the advisory to its related pull requests, commits, and discussions, and paste those links into the advisory thread so the context lives in one place.
+- **Workaround:** keep the connections yourself. Maintain a private tracking note (or a private issue) that links the advisory to its related pull requests, commits, and discussions, and paste those links into the advisory thread so the context lives in one place. Since October 2026 you can also read, add, and edit advisory comments through the [repository security advisory comments API](https://github.blog/changelog/2026-10-02-repository-security-advisory-comments-api-in-public-preview/) (public preview), so the cross-linking can be scripted. Note the API covers regular advisory comments only, not confidential comments, and it still does not create the automatic backlink for you.
 
 ### Fork access is tied to advisory collaborators
 

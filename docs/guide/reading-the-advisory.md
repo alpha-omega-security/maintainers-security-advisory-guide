@@ -27,4 +27,4 @@ This is the part worth getting exactly right:
 Two consequences to internalize now:
 
 - **The reporter's first message will be public.** They wrote it, but you publish it. Before going live, check it for raw proof-of-concept detail you would rather not broadcast, and coordinate with them if needed ([§6](./preparing-the-advisory.md)).
-- **The thread is a safe space, with one caveat.** Because the rest of the conversation stays private, it is where you and your team work. But the reporter is in that thread too, so for team-only discussion, like a borderline scope call, step off the advisory ([§4](./triaging-the-report.md)).
+- **The thread is a safe space, with one caveat.** Because the rest of the conversation stays private, it is where you and your team work. The reporter is in that thread too, so for team-only discussion, like a borderline scope call, use a [confidential comment](https://github.blog/changelog/2026-10-02-confidential-comments-on-repository-security-advisories/) (visible only to people with write access to the repository), or step off the advisory ([§4](./triaging-the-report.md)).
