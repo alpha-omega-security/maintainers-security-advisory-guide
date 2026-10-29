@@ -59,10 +59,10 @@ At this stage GitHub offers four actions, and nothing else:
 
 ![The GitHub security advisory triage view, showing the options a maintainer has on a privately reported vulnerability: "Start a temporary private fork", "Accept and open as a draft", a comment box, and a "Close security advisory" button.](../../static/img/triage_options.png)
 
-- **Start a temporary private fork** — collaborate on a fix privately (see [§5](./preparing-the-fix.md)).
-- **Accept and open as a draft** — accept the report and keep working as a draft advisory. GitHub even reminds you to review carefully first.
-- **Comment** — reply without deciding yet, for example to ask for a clearer proof of concept.
-- **Close security advisory** — decline it. A comment is not required, but always leave one.
+- **Start a temporary private fork.** Collaborate on a fix privately (see [§5](./preparing-the-fix.md)).
+- **Accept and open as a draft.** Accept the report and keep working as a draft advisory. GitHub even reminds you to review carefully first.
+- **Comment.** Reply without deciding yet, for example to ask for a clearer proof of concept.
+- **Close security advisory.** Decline it. A comment is not required, but always leave one.
 
 Since October 2026, GitHub offers a [structured form for privately reported vulnerabilities](https://github.blog/changelog/2026-10-01-structured-forms-for-private-vulnerability-reports/) that requires a summary, details, a proof of concept, and impact, so reports arrive in a more consistent baseline shape than they once did. The form does not verify the content, so you still treat every claim as a claim; and private reports are now [rate-limited](https://github.blog/changelog/2026-10-01-rate-limits-for-private-vulnerability-reports/), with a trusted-reporter allowlist, to curb bulk or automated submissions (see [LIMITATIONS.md](../limitations.md)).
 
@@ -81,7 +81,7 @@ If you triage as a team, the criteria has to be shared rather than living in one
 There is a catch: **the advisory thread includes the reporter in most interactions.** A normal comment is visible to them. When you need to align the team on a borderline call, use a [confidential comment](https://github.blog/changelog/2026-10-02-confidential-comments-on-repository-security-advisories/) (visible only to people with write access to the repository, not the reporter), or take the discussion somewhere separate and report the decision back in the advisory.
 
 :::note
-Referencing an advisory from a pull request or issue does not create the automatic link-back you get between issues and PRs. If you discuss or track an advisory elsewhere, you have to keep those connections yourself. See [LIMITATIONS.md](../limitations.md).
+Referencing an advisory from a pull request or issue does not create the automatic link-back you get between issues and PRs. If you discuss or track an advisory elsewhere, you have to keep those connections yourself. See [Limitations](../limitations.md).
 :::
 
 ## Saying no

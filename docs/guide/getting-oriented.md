@@ -41,11 +41,13 @@ flowchart TD
     F --> R[Reserve a CVE]
     R --> G[Prepare and review the patch]
     G --> H[Prepare the advisory for publication]
-    H --> I[Alert your community]
+    H --> I["Alert your community (optional)"]
     I --> J[Ship the patch]
     J --> K[Publish the advisory]
     K --> L[Communicate to the world]
 ```
+
+Alerting your community is optional advance notice that a release is coming, with no vulnerability detail; most projects skip it, and it never means disclosing before the fix ships (see [§7](./coordinating-publication.md)).
 
 ## The three don'ts
 
