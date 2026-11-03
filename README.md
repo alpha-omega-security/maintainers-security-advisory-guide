@@ -4,9 +4,6 @@
 
 A practical, consult-as-you-go guide for open source maintainers handling GitHub security advisories: triage, private forks, CVEs, publication, and the gotchas nobody warns you about.
 
-> [!IMPORTANT]
-> Draft under review before the first release. Corrections and feedback are welcome.
-
 ## Read the guide
 
 The guide is published as a [Docusaurus](https://docusaurus.io/) site at **<https://alpha-omega-security.github.io/maintainers-security-advisory-guide/>**.
